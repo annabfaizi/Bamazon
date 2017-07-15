@@ -56,13 +56,25 @@ function selectPurchase() {
         else {
           //run quantity check function
             function checkQuantity(){
-
+                function updateProducts() {
+                    console.log("Updating product list...\n");
+                    var query = connection.query("UPDATE products WHERE ?",
+                        [
+                        {unit_id: answer.item}
+                        ],
+                        function(err, result) {
+                          console.log(result.unit_id + "th product updated!\n");
+                        // Call subtractQ AFTER the UPDATE completes
+                        function subtractQ(){
+                            
+                        };
+                        }
+                    );
+                };
             };
-          //run total function
+            //run total function
             function total(){
-
-            };
-        }
-        
+            }           
+        };
     });
-}
+};
