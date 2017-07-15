@@ -2,6 +2,9 @@
 This is week-12's homework assignment: a Node.js application simulating Amazon's market place
 
 # How It Works
+The DATABASE:
+![Database](/images/database.JPG)
+
 First the app prints out the product list:
 ![Product List](/images/products-list.JPG)
 
